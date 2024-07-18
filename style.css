@@ -1,0 +1,84 @@
+.todo{
+    background: url(hero.jpg) no-repeat center;
+    background-size: cover;
+    height: 750px;
+}
+
+.todo h1{
+    padding-top: 300px;
+    color: white;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+}
+
+.todo input{
+    margin-left: 50px;
+    width: 60%;
+    height: 48px;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+}
+
+.todo button{
+    width: 100px;
+    height: 48px;
+    border: none;
+    background-color: red;
+    color: black;
+    border-radius: 6px;
+}
+
+.todo button:hover{
+    background-color: rgb(144, 0, 0);
+    color: aliceblue;
+}
+
+.list-area{
+    background-color: rgba(3, 140, 140, 0.142);
+    height: 750px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 15px;
+    width: 85%;
+    border-radius: 8px;
+    border: 1px solid white;
+    animation: 1s ease-in-out;
+    animation-name: slideIn;
+}
+
+i{
+    float: right;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 30px;
+}
+
+i:hover{
+   color: red;
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: rotateX('60deg') rotateY('-10px');
+        transition: 1s;
+    }
+    to{
+        opacity: 3;
+        transform: rotateX('0deg') rotateY('0px');
+    }
+}
+
+.slideOut{
+    transform: rotateX('50deg') rotateY('-10px');
+    opacity: 0;
+    transition: 0.5s;
+}
